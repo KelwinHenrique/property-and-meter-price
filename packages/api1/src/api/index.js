@@ -1,7 +1,8 @@
 import { Router } from 'express'
+import { metersRouter } from './meters'
 
 const router = new Router()
 
-router.use('/meter-value', () => console.log('Price meter'))
+router.use('/meters', metersRouter)
 
 export default router
