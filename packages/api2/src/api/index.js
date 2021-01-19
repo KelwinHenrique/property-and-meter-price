@@ -1,7 +1,8 @@
 import { Router } from 'express'
+import { propertiesRouter } from './properties'
 
 const router = new Router()
 
-router.use('/property-value', () => console.log('Price property'))
+router.use('/properties', propertiesRouter)
 
 export default router
