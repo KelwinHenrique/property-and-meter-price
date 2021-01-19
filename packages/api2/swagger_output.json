@@ -2,25 +2,70 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "REST API",
-    "description": ""
+    "title": "API2",
+    "description": "Documentation API2."
   },
-  "host": "localhost:3000",
+  "host": "localhost:8080/api",
   "basePath": "/",
   "tags": [],
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "securityDefinitions": {},
-  "consumes": [],
-  "produces": [],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
   "paths": {
     "/properties/price": {
       "get": {
-        "tags": [],
-        "description": "",
-        "parameters": [],
-        "responses": {}
+        "tags": [
+          "Properties"
+        ],
+        "description": "Return property price.",
+        "parameters": [
+          {
+            "name": "quantity",
+            "description": "Quantity of meters in property.",
+            "type": "number",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "propertyPrice": {
+                  "type": "number",
+                  "example": 573.4045852575351
+                }
+              },
+              "xml": {
+                "name": "main"
+              }
+            },
+            "description": "Property price found."
+          },
+          "400": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Error to find property price."
+                }
+              },
+              "xml": {
+                "name": "main"
+              }
+            },
+            "description": "Error to get property price."
+          }
+        }
       }
     }
   },

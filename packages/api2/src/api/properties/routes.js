@@ -14,6 +14,17 @@ propertiesRouter.get('/price',
     },
   }),
   propertiesController.processGetPropertyPrice
+  // #swagger.tags = ['Properties']
+  // #swagger.description = 'Return property price.'
+  //#swagger.parameters['quantity'] = { description: 'Quantity of meters in property.', type: 'number' }
+  /* #swagger.responses[200] = {
+    schema: { propertyPrice: 573.4045852575351},
+    description: 'Property price found.'
+  } */
+  /* #swagger.responses[400] = {
+    schema: { message: 'Error to find property price.' },
+    description: 'Error to get property price.'
+  } */
 )
 
 export { propertiesRouter }

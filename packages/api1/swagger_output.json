@@ -2,25 +2,63 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "REST API",
-    "description": ""
+    "title": "API1",
+    "description": "Documentation API1."
   },
   "host": "localhost:3000",
   "basePath": "/",
   "tags": [],
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "securityDefinitions": {},
-  "consumes": [],
-  "produces": [],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
   "paths": {
-    "/price": {
+    "/meters/price": {
       "get": {
-        "tags": [],
-        "description": "",
+        "tags": [
+          "Meters"
+        ],
+        "description": "Return meter price.",
         "parameters": [],
-        "responses": {}
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "meterValue": {
+                  "type": "number",
+                  "example": 84.73573338978721
+                }
+              },
+              "xml": {
+                "name": "main"
+              }
+            },
+            "description": "Meter price found."
+          },
+          "400": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Error to find meter price."
+                }
+              },
+              "xml": {
+                "name": "main"
+              }
+            },
+            "description": "Error to get meter price."
+          }
+        }
       }
     }
   },
