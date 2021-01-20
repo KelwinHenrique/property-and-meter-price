@@ -5,7 +5,8 @@
   "main": "src",
   "scripts": {
     "start:dev": "nodemon src/index.js",
-    "swagger-autogen": "node swagger.js"
+    "swagger-autogen": "node swagger.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,8 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
+    "@sucrase/jest-plugin": "^2.0.0",
+    "jest": "^26.6.3",
     "sucrase": "^3.17.0"
   }
 }

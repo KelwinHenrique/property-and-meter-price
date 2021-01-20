@@ -5,12 +5,14 @@
   "main": "src",
   "scripts": {
     "start:dev": "nodemon src/index.js",
-    "swagger-autogen": "node swagger.js"
+    "swagger-autogen": "node swagger.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sucrase/jest-plugin": "^2.0.0",
     "axios": "^0.21.1",
     "cls-hooked": "^4.2.2",
     "cls-rtracer": "^2.5.1",
@@ -18,6 +20,7 @@
     "dotenv-safe": "^8.2.0",
     "express": "^4.17.1",
     "http-status": "^1.5.0",
+    "jest": "^26.6.3",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.3",
     "querymen": "^2.1.4",

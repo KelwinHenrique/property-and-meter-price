@@ -3,4 +3,5 @@ node_modules
 .tmp
 dist
 package-lock.json
-/logs
+logs
+coverage
