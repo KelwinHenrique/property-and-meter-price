@@ -9,7 +9,7 @@ This api contains:
 - Based on clean architecture;
 - Documentation
     [API1](https://infinite-shelf-03720.herokuapp.com/doc/#/Meters/get_meters_price)
-    [API2](https://infinite-shelf-03720.herokuapp.com/doc/#/Meters/get_meters_price)
+    [API2](https://nameless-bayou-05586.herokuapp.com/doc/#/Properties/get_properties_price)
 - Docker;
 
 ## How to run the project with docker
@@ -115,3 +115,8 @@ Run `npm run test` to execute all(unit and integrations) tests of the api.
 - jest and supertest: Unit test and integration test.
 - Swagger: To create documentation for this API.
 - winston and stack-trace: To create logs for this API.
+
+## Access API's
+
+- [API1](https://infinite-shelf-03720.herokuapp.com/api/meters/price)
+- [API2](https://nameless-bayou-05586.herokuapp.com/api/properties/price?quantity=10)

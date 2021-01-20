@@ -5,7 +5,7 @@
     "title": "API2",
     "description": "Documentation API2."
   },
-  "host": "localhost:8080/api",
+  "host": "nameless-bayou-05586.herokuapp.com/api",
   "basePath": "/",
   "tags": [],
   "schemes": [
