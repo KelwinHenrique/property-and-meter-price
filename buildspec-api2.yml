@@ -2,7 +2,6 @@ version: 0.2
 
 artifacts:
   files:
-    - 'packages/api2/**/*'
-    - '.npmrc'
-    - '.ebextensions/**/*'
+    - '**/*'
+  base-directory: 'packages/api2'
   name: api2
