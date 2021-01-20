@@ -18,6 +18,7 @@
     "axios": "^0.21.1",
     "cls-hooked": "^4.2.2",
     "cls-rtracer": "^2.5.1",
+    "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv-safe": "^8.2.0",
     "express": "^4.17.1",
@@ -27,10 +28,10 @@
     "nodemon": "^2.0.3",
     "querymen": "^2.1.4",
     "stack-trace": "^0.0.10",
+    "sucrase": "^3.17.0",
     "swagger-autogen": "^2.4.1",
     "swagger-ui-express": "^4.1.6",
-    "winston": "^3.3.3",
-    "sucrase": "^3.17.0"
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "supertest": "^6.1.1"

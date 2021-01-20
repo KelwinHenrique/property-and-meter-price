@@ -14,6 +14,7 @@
   "dependencies": {
     "cls-hooked": "^4.2.2",
     "cls-rtracer": "^2.5.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "http-status": "^1.5.0",
     "morgan": "^1.10.0",
