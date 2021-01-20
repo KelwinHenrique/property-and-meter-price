@@ -30,6 +30,7 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "sucrase": "^3.17.0"
+    "sucrase": "^3.17.0",
+    "supertest": "^6.1.1"
   }
 }
