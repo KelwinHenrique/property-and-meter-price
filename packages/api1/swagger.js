@@ -9,7 +9,7 @@ const doc = {
     title: "API1",
     description: "Documentation API1."
   },
-  host: "localhost:3000/api",
+  host: "https://infinite-shelf-03720.herokuapp.com/api",
   basePath: "/",
   schemes: ['http', 'https'],
   consumes: ['application/json'],

@@ -4,7 +4,7 @@
   "description": "",
   "main": "src",
   "scripts": {
-    "start:dev": "nodemon src/index.js",
+    "start": "nodemon src/index.js",
     "swagger-autogen": "node swagger.js",
     "test": "jest"
   },
@@ -19,6 +19,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.3",
     "stack-trace": "^0.0.10",
+    "sucrase": "^3.17.0",
     "swagger-autogen": "^2.4.1",
     "swagger-ui-express": "^4.1.6",
     "winston": "^3.3.3"
@@ -26,7 +27,6 @@
   "devDependencies": {
     "@sucrase/jest-plugin": "^2.0.0",
     "jest": "^26.6.3",
-    "sucrase": "^3.17.0",
     "supertest": "^6.1.1"
   }
 }
