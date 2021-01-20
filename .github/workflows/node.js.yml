@@ -25,11 +25,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - working-directory: ./packages/api1
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
-    - working-directory: ./packages/api1
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+    - name: API1
+      working-directory: ./packages/api1
+      run: |
+          npm ci
+          npm test
+    - name: API2
+      working-directory: ./packages/api2
+      run: |
+          npm ci
+          npm test
