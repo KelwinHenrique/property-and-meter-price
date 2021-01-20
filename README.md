@@ -7,7 +7,9 @@ This api contains:
 - Unit and integration tests;
 - Log system;
 - Based on clean architecture;
-- [Documentation.]();
+- Documentation
+    [API1](https://infinite-shelf-03720.herokuapp.com/doc/#/Meters/get_meters_price)
+    [API2](https://infinite-shelf-03720.herokuapp.com/doc/#/Meters/get_meters_price)
 - Docker;
 
 ## How to run the project with docker
