@@ -1,16 +1,8 @@
 version: 0.2
 
-phases:
-  install:
-    runtime-versions:
-      nodejs: 12
-    commands:
-      - npm install
-      - rm package-lock.json
-
 artifacts:
   files:
-    - 'packages/api1/**/**
+    - 'packages/api1/**/*'
     - '.npmrc'
     - '.ebextensions/**/*'
   name: api1
