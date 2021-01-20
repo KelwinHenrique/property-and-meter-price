@@ -28,8 +28,10 @@ jobs:
     - name: API1
       working-directory: ./packages/api1
       run: |
+          npm install
           npm test
     - name: API2
       working-directory: ./packages/api2
       run: |
+          npm install
           npm test
