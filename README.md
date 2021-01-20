@@ -118,5 +118,16 @@ Run `npm run test` to execute all(unit and integrations) tests of the api.
 
 ## Access API's
 
+### HEROKU
 - [API1](https://infinite-shelf-03720.herokuapp.com/api/meters/price)
 - [API2](https://nameless-bayou-05586.herokuapp.com/api/properties/price?quantity=10)
+
+### AWS
+- [API1](http://api1-env.eba-3t2yz5e6.us-east-2.elasticbeanstalk.com/api/meters/price)
+- [API2](http://api2-env.eba-pjqypnx7.us-east-2.elasticbeanstalk.com/api/properties/price?quantity=10)
+
+## CI/CD
+
+- Github actions
+- AWS CodePipeline
+![aws codepipeline](./assets/codepipeline.png)
