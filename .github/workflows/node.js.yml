@@ -28,10 +28,8 @@ jobs:
     - name: API1
       working-directory: ./packages/api1
       run: |
-          npm ci
           npm test
     - name: API2
       working-directory: ./packages/api2
       run: |
-          npm ci
           npm test
